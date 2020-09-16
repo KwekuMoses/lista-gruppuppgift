@@ -8,6 +8,9 @@ document.addEventListener("DOMContentLoaded", function(e) {
         
         let btnRemove = document.createElement("button");
         btnRemove.innerHTML = "Remove";
+        btnRemove.addEventListener("click", function() {
+            new_message.remove();
+        });
 
          new_message.innerHTML = message.value;
          new_message.addEventListener("click", function(e) {          
@@ -31,4 +34,4 @@ sätt att lägga till / ta bort klasser. DONE!
 Lägg till en checkruta för varje uppgift och låt den avgöra om uppgiften ska markeras som klar eller inte. DONE!
 
 Lägg till en extra knapp eller liknande som låter er ta bort (eller markera) uppgiften. Ni kan nog ha 
-nytta av egenskapen parentNode.*/
+nytta av egenskapen parentNode  DONE*/
